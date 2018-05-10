@@ -1,0 +1,27 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h2 align="center">Login to get started!</h2>
+
+    <form>
+      <div class="imagecontainer">
+        <img src="/assets/exercise-icon-green.png" class="exerciseicon">
+      </div>
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Username" name="username" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Password" name="password" required>
+
+        <button class = "greenbutton" type="submit">Login</button>
+        <a routerLink="../signup" routerLinkActive="active"><button class="greenbutton">Not a member yet? Sign up here!</button></a>
+        <h4>OR</h4>
+        <button class="loginBtn loginBtn--facebook" (click)="fblogin()"  >Login with Facebook</button>
+        <button class="loginBtn loginBtn--google" (click)="googlelogin()" >Login with Google</button>
+       
+      </div>
+    </form>
+  </body>
+</html>

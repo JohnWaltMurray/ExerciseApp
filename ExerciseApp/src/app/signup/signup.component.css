@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    margin: 0px 80px 0px 80px;
+}
+
+button {
+    background-color: rgb(24, 168, 36);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(173, 173, 173);
+    box-sizing: border-box;
+}
+
+.imagecontain {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.exerciseicon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.password {
+    float: right;
+    padding-top: 16px;
+}
