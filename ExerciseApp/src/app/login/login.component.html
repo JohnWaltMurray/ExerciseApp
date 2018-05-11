@@ -10,12 +10,12 @@
       </div>
       <div class="container">
         <label><b>Username</b></label>
-        <input type="text" placeholder="Username" name="username" required>
+        <input #Username type="text" placeholder="Username" name="username" required>
 
         <label><b>Password</b></label>
-        <input type="password" placeholder="Password" name="password" required>
+        <input #Password type="password" placeholder="Password" name="password" required>
 
-        <button class = "greenbutton" type="submit">Login</button>
+        <button class = "greenbutton" type="submit" (click)="loginUser(Username.value, Password.value)">Login</button>
         <a routerLink="../signup" routerLinkActive="active"><button class="greenbutton">Not a member yet? Sign up here!</button></a>
         <h4>OR</h4>
         <button class="loginBtn loginBtn--facebook" (click)="fblogin()"  >Login with Facebook</button>
