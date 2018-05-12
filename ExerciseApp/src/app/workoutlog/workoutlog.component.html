@@ -1,0 +1,37 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello {{Name}}! Here is your workout log:</h1>
+    <table>
+      <thead>
+          <th>Workout Type</th>
+          <th>Workout Duration (Minutes)</th>
+          <th>Workout Date</th>
+          <th>Number of Reps</th>
+          <th>Number of Sets</th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let log of MyLog; let i = index">
+              <td>{{log.WorkoutType}}</td>
+              <td>{{log.WorkoutDuration}}</td>
+              <td>{{log.WorkoutDate}}</td>
+              <td>{{log.NumberOfReps}}</td>
+              <td>
+                {{log.NumberOfSets}}
+                <button class="close" (click)="removeWorkout(i)">&#10006;</button>
+              </td>
+          </tr>
+          <tr>
+            <td><input [(ngModel)]="WorkType" type="text" placeholder="Enter Workout Type"></td>
+            <td><input [(ngModel)]="WorkDuration" type="number" placeholder="Enter Workout Duration"></td>
+            <td><input [(ngModel)]="WorkDate" type="date" placeholder="Enter Workout Date"></td>
+            <td><input [(ngModel)]="NumReps" type="number" placeholder="Enter Number of Reps"></td>
+            <td><input [(ngModel)]="NumSets" type="number" placeholder="Enter Number of Sets"></td>
+          </tr>
+          <button class = "greenbutton" type="submit" (click)="addNewWorkout()">Save new entry</button>
+      </tbody>
+    </table>
+  </body>
+</html>
+

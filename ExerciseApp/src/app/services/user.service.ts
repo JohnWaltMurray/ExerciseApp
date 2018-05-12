@@ -8,17 +8,21 @@ import { BehaviorSubject, Observable } from "rxjs";
 @Injectable()
 export class UserService {
 
-  CurrentUser: User;
+  CurrentUser = new User();
   isLoggedIn = new BehaviorSubject<boolean>(this.loginStatus());
 
   constructor(private router: Router) { 
+
   }
 
   login(uname: string, pword: string) {
+    console.log(this.CurrentUser.Username);
+    console.log(this.CurrentUser.Username);
     this.CurrentUser = { Username: uname, Password: pword }
+    console.log(this.CurrentUser.Username);
     this.setUserLoggedIn();
     console.log(this.isLoggedIn);
-  //  this.router.navigate(['/home']);
+    this.router.navigate(['/home']);
   }
 
   setUserLoggedIn() {

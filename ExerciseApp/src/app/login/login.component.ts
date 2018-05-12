@@ -7,14 +7,16 @@ import { UserService } from "../services/user.service";
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
+
 })
 export class LoginComponent implements OnInit {
 
   Pictures: string[] = []
 
-  constructor(private user:UserService) {  }
+  constructor(private user:UserService) {   }
 
   ngOnInit() {
+    console.log(this.user.CurrentUser.Username);
   }
 
   loginUser(username: string, password: string) {

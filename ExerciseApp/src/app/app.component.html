@@ -3,8 +3,10 @@
 <ul>
   <li><a routerLink="home" routerLinkActive="active"><b>Home</b></a></li>
   <li><a routerLink="profile" routerLinkActive="active"><b>Profile</b></a></li>
+  <li><a routerLink="workoutlog" routerLinkActive="active"><b>Workout Log</b></a></li>
   <li><a routerLink="login" routerLinkActive="active"><b>Login</b></a></li>
   <li><a routerLink="login" routerLinkActive="active" (click)="logoutButton()"><b>Logout</b></a></li>
+  <li><a routerLink="login" routerLinkActive="active"><b>{{this.user.Username}}</b></a></li>
 </ul>
 
 <router-outlet></router-outlet>
