@@ -11,4 +11,6 @@ The features Angular provides were very useful. I mostly made use of services to
 
 Overall I feel this project would be greatly improved with the use of a database to store the user's information safely server-side rather than client-side as it is implemented now, but my knowledge of PHP is zero and I am only just this semester learning SQL so I decided to take the client-side rout.
 
+Lastly the Google+ share button doesn't work unless the website gets posted to the internet, since Google's systems crawl the site before creating the link and it can't do that on a site that's hosted locally. So it'd work if the site had a real domain.
+
 Thanks a lot for the semester, the class was very practical which was a breath of fresh air after learning mostly skills related to Computer Science theory rather than programming and implementation skills like I learned in your class.
