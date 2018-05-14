@@ -14,3 +14,6 @@ Overall I feel this project would be greatly improved with the use of a database
 Lastly the Google+ share button doesn't work unless the website gets posted to the internet, since Google's systems crawl the site before creating the link and it can't do that on a site that's hosted locally. So it'd work if the site had a real domain.
 
 Thanks a lot for the semester, the class was very practical which was a breath of fresh air after learning mostly skills related to Computer Science theory rather than programming and implementation skills like I learned in your class.
+
+
+Post final: The typeahead feature is located in the login page if you can't find it.

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -13,6 +14,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.user.CurrentUser.Username);
+    console.log(this.user.loggedInUsers);
   }
+
+  
+    
 
 }

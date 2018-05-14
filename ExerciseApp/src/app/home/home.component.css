@@ -8,6 +8,7 @@ h2 {
     font-style: italic;
     color: rgb(0, 0, 0);
     border-bottom: 1px #000000 solid;
+    float: left;
 }
 
 info {
@@ -25,4 +26,7 @@ info {
     height: 350px;
     width: 620px;
     overflow: hidden;
+}
+form-control {
+    float: left;
 }

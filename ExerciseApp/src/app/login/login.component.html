@@ -19,6 +19,18 @@
         <a routerLink="../signup" routerLinkActive="active"><button class="greenbutton">Not a member yet? Sign up here!</button></a>
        
       </div>
+
+      <label for="typeahead-http">Search for a logged in user:</label>
+      <input
+        id="typeahead-http"
+        type="text"
+        class="form-control"
+        [ngbTypeahead]="search"
+        (focus)="focus$.next($event.target.value)"
+        (click)="click$.next($event.target.value)"
+        #instance="ngbTypeahead"
+        placeholder="Search for a user"
+      />
     </form>
   </body>
 </html>

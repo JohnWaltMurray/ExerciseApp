@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { NgbTypeahead } from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { UserService } from "./services/user.service";
 import { RoutGuard } from './rout.guard';
@@ -42,6 +44,7 @@ const appRoutes: Routes = [
     HttpModule,
     HttpClientModule,
     FormsModule,
+    NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes, {enableTracing: true })
   ],
   providers: [RoutGuard, UserService],
