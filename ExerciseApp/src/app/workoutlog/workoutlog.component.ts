@@ -19,6 +19,7 @@ export class WorkoutlogComponent implements OnInit {
   WorkDate: Date;
   NumReps: number;
   NumSets: number;
+  MyLogSize: number;
 
   constructor(private user: UserService, private router: Router) { 
     this.Name = this.user.CurrentUser.Username;
@@ -27,6 +28,7 @@ export class WorkoutlogComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.MyLogSize = this.MyLog.length;
   }
 
   removeWorkout(index: number) {

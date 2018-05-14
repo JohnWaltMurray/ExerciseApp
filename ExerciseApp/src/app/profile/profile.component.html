@@ -3,6 +3,33 @@
   </head>
   <body>
     <h1>Hello {{Name}}! Welcome to your profile all about you!</h1>
-    <button class = "greenbutton" type="submit" (click)="editProfile()">Edit your profile</button>
+    <div class="avatarcontainer">
+      <h3 class="name">{{Name}}</h3>
+      <img src="./assets/null_avatar.jpg">
+      <button class="greenbutton" type="submit" (click)="editProfile()">Edit your profile</button>
+    </div>
+    <div class="line"></div>
+    <div class="profiletext">
+        <h2 class="sectiontitle">About Me</h2>
+        &nbsp;
+        <h3>Full Name: {{profile.FullName}}</h3>
+        &nbsp;
+        <h3>Date of Birth: {{profile.Birthdate}}</h3>
+        &nbsp;
+        <h3>Email: {{profile.Email}}</h3>
+        &nbsp;
+        <h3>Favorite Workout: {{profile.FavWorkout}}</h3>
+        &nbsp;
+        <h3>Gender: {{profile.Gender}}</h3>
+        &nbsp;
+        <h3>Address: {{profile.Address}}</h3>
+        &nbsp;
+
+    </div>
+    
+    
+    
+    
+
   </body>
 </html>

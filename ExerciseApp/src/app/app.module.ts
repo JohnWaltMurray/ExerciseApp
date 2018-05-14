@@ -14,6 +14,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WorkoutlogComponent } from './workoutlog/workoutlog.component';
 import { CoreModule } from './core.module';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 
 
 const appRoutes: Routes = [
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [RoutGuard], data: { }},
   { path: 'workoutlog', component: WorkoutlogComponent, canActivate: [RoutGuard], data: { }},
   { path: 'signup',  component: SignupComponent },
+  { path: 'editprofile',  component: EditprofileComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
@@ -32,7 +34,8 @@ const appRoutes: Routes = [
     LoginComponent,
     SignupComponent,
     ProfileComponent,
-    WorkoutlogComponent
+    WorkoutlogComponent,
+    EditprofileComponent
   ],
   imports: [
     BrowserModule,

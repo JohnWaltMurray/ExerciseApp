@@ -1,0 +1,37 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello {{Name}}! Welcome to your profile all about you!</h1>
+    <div class="avatarcontainer">
+      <h3 class="name">{{Name}}</h3>
+      <img src="./assets/null_avatar.jpg">
+      <button class="greenbutton" type="submit" (click)="saveProfile()">Save Changes</button>
+    </div>
+    <div class="line"></div>
+    <div class="profiletext">
+      
+          <h2 class="sectiontitle">About Me</h2>
+          &nbsp;
+          <h3>Full Name: </h3> <input [(ngModel)]="FullName" type="text" placeholder="Enter Your Name">
+          &nbsp;
+          <h3>Date of Birth: </h3> <input [(ngModel)]="DateofBirth" type="date" placeholder="Enter Date of Birth">
+          &nbsp;
+          <h3>Email: </h3> <input [(ngModel)]="Email" type="text" placeholder="Enter Email">
+          &nbsp;
+          <h3>Favorite Workout: </h3> <input [(ngModel)]="FavWorkout" type="text" placeholder="Enter Favorite Workout">
+          &nbsp;
+          <form>
+            <h3>Gender: </h3> 
+            <select id="Gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </form>
+          &nbsp;
+          <h3>Address: </h3> <textarea [(ngModel)]="Address" cols="30" rows="5" placeholder="Enter Address"> </textarea>
+          &nbsp;
+     
+    </div>
+  </body>
+</html>

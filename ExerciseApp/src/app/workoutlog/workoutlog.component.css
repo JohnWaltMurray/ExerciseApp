@@ -61,3 +61,24 @@ table td:first-child {
 table td:last-child {
     border-right: none;
 }
+
+.twitter-share-button {
+    display: inline-block;
+    width: 100px;
+    height: 21px;
+    background-image: "./assets/tweetbutton.png";
+    background-position: 0 0;
+    float:left;
+    margin-left: 2px;
+  }
+.fb-share-button {
+    float:left;
+    width: 100px;
+    margin-left: 2px;
+}
+
+.g-plus {
+    float: left;
+    width: 100px;
+    margin-left: 2px;
+}

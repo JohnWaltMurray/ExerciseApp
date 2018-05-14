@@ -3,8 +3,23 @@ export class User {
     Password: string;
 }
 
-export class CreatedUsers {
+export class Profile {
+    user: User;
+    FullName: string;
+    Birthdate: Date;
+    Email: string;
+    FavWorkout: string;
+    Gender: string;
+    Address: string;
 
+    constructor(name: string, DOB: Date, email: string, fav: string, gend: string, addr: string) {
+        this.FullName = name;
+        this.Birthdate = DOB;
+        this.Email = email;
+        this.FavWorkout = fav;
+        this.Gender = gend;
+        this.Address = addr;
+    }
 }
 
 export class Workout {
